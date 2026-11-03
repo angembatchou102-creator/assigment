@@ -1,0 +1,19 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+form{
+    background: rgb(190, 186, 186);
+     width: 500px;
+    border:2px solid rgb(212, 207, 207) ;
+    padding: 10px;
+    margin: 50px auto;
+}
+.phones{
+    width:50px
+}
+textarea{
+    width: 450px;
+    height: 100px;
+}

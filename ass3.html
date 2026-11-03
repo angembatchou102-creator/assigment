@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="ass.css">
+</head>
+<body>
+    <div class="container">
+   <form action="" onsubmit="return validationForm()">
+    <table border="2px">
+         <tr>
+        <td>Name</td>
+        <td>
+    <input type="text" id="name">
+        </td>
+    </tr>
+
+      <tr>
+        <td>Email</td>
+        <td>
+  <input type="email" name="email">
+        </td>
+    </tr>
+
+     <tr>
+        <td>Zip code</td>
+        <td>
+   <input type="text" name="zip">
+        </td>
+    </tr>
+
+      <tr>
+        <td>Country</td>
+        <td>
+      <select name="country" id="country">
+            <option value="">Choose yourse</option>
+            <option value="USA">USA</option>
+            <option value="UK">UK</option>
+            <option value="INDIA">INDIA</option>
+        </select>
+        </td>
+    </tr>
+
+     <tr>
+        <td></td>
+        <td>
+    <input type="submit" value="Submit">
+        </td>
+    </tr>
+</table>
+   </form>
+
+   <form action="" onsubmit="return validationForm()">
+    <table border="2px">
+         <tr>
+        <td>Name</td>
+        <td>
+    <input type="text" id="name">
+        </td>
+    </tr>
+
+      <tr>
+        <td>Email</td>
+        <td>
+  <input type="email" name="email">
+        </td>
+    </tr>
+
+     <tr>
+        <td>Zip code</td>
+        <td>
+   <input type="text" name="zip">
+        </td>
+    </tr>
+
+      <tr>
+        <td>Country</td>
+        <td>
+      <select name="country" id="country">
+            <option value="">Choose yours</option>
+            <option value="USA">USA</option>
+            <option value="UK">UK</option>
+            <option value="INDIA">INDIA</option>
+        </select>
+        </td>
+    </tr>
+
+     <tr>
+        <td></td>
+        <td>
+    <input type="submit" value="Submit">
+        </td>
+    </tr>
+</table>
+   </form>
+   </div>
+   
+   <!-- <script>
+    function validationForm(){
+        let name=document.getElementById("name").value;
+         let email=document.getElementById("email").value;
+          let zip=document.getElementById("zip").value;
+           let country=document.getElementById("country").value;
+
+           if(name == "" || email== ""|| zip == "" || country ==""){
+            alert("A;; fields must be filled!");
+            return false;
+           }
+           let emailPattern =/^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+           if(!emailPattern.test(email)){
+            alert("Enter a valid email address!");
+            return false;
+           }
+           alert("Form submitted successfully");
+           return true;
+        
+    }
+   </script> -->
+</body>
+</html>

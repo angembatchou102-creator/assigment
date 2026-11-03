@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="">
+       <div class="row"> <label for="firstname">Firstname:</label>
+        <input type="text" id="firstname"></div>
+
+       <div class="row"> <label for="email">Your email:</label>
+        <input type="email"  required></div>
+
+         <div class="row"><label for="subject">Subject:</label>
+        <input type="text" id="subject" required></div>
+
+       <div class="row"> <label for="country">Country:</label>
+
+        <select name="country" id="country">
+            <option value="none">none</option>
+            <option value="none">Cameroun</option>
+            <option value="none">USA</option>
+        </select></div>
+
+              <div class="comment"> <label for="comment">Comment:</label>
+        <textarea name="comment" id=""></textarea></div>
+        <br>
+
+        <div class="row">
+        <label for="gender">Gender:</label>
+        <div class="options">
+        <input type="radio" id="male" name="gender" >
+        M
+        <input type="radio" id="female" name="gender" >
+        F
+        </div>
+        </div>
+
+          <div class="degree"><label for="Highest degree level">Highest degree level:</label>
+
+        <div class="option"> 
+            <div>
+            <input type="checkbox"   value="post-doc" name=" degree []">
+             Post-Doc</div>
+             <div>
+            <input type="checkbox"  value="ph.d"  name=" degree[]">
+            Ph.d
+                </div>
+                <div>
+            <input type="checkbox"  value="master"  name=" degree[]">
+            Master MS.c
+            </div>
+            <div>
+            <input type="checkbox"  value="licence" name=" degree[]">
+            Licence BS.c
+        </div>
+        <div>
+        <input type="checkbox"   value="bacc" name=" degree[]">
+            Bacc AL-GCE
+        </div>
+            </div>
+           
+        </div>
+        
+<div class="buttons">
+    <button type="reset">reset</button>  
+    <br>
+           <button type="submit">Submit</button>
+           </div>
+
+    </form>
+    
+</body>
+</html>
