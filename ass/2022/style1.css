@@ -1,0 +1,23 @@
+.form-container {
+    width: 350px;
+    margin: 40px auto;
+    padding: 20px;
+    border: 1px solid #333;
+}
+
+.form-container label {
+    display: block;
+    margin-top: 15px;
+}
+
+.form-container input {
+    width: 95%;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+.form-container button {
+    margin-top: 20px;
+    padding: 10px 15px;
+    cursor: pointer;
+}

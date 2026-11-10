@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+
+.registration {
+    width: 600px;
+    margin: 30px auto;
+    padding: 15px;
+    background-color: #d6d6d6;
+}
+
+
+label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+
+input {
+    padding: 7px;
+    margin-bottom: 5px;
+}
+
+
+textarea {
+    width: 98%;
+    height: 70px;
+}
+
+
+.country {
+    width: 45px;
+}
+
+
+button {
+    padding: 7px 18px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #333;
+    color: white;
+}

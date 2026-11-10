@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="ass.css">
+</head>
+<body>
+
+<h2>Registration Form</h2>
+
+<div class="container">
+    <form action="process.php" method="POST"
+      onsubmit="return validateForm()">
+ <table border="2px">
+    <label>Name:</label>
+    <input type="text" name="name" id="name" required>
+    <br><br>
+
+    <label>Email:</label>
+    <input type="email" name="email" id="email" required>
+    <br><br>
+
+    <label>Zip Code:</label>
+    <input type="text" name="zip_code" id="zip_code" required>
+    <br><br>
+
+    <label>Country:</label>
+    <select name="country" id="country" required>
+        <option value="">Choose yours</option>
+        <option value="USA">USA</option>
+        <option value="UK">UK</option>
+        <option value="INDIA">INDIA</option>
+    </select>
+    <br><br>
+
+    <button type="submit">Submit</button>
+</table>
+</form>
+
+  <form action="process.php" method="POST"
+      onsubmit="return validateForm()">
+ <table border="2px">
+    <label>Name:</label>
+    <input type="text" name="name" id="name" required>
+    <br><br>
+
+    <label>Email:</label>
+    <input type="email" name="email" id="email" required>
+    <br><br>
+
+    <label>Zip Code:</label>
+    <input type="text" name="zip_code" id="zip_code" required>
+    <br><br>
+
+    <label>Country:</label>
+    <select name="country" id="country" required>
+        <option value="">Choose yours</option>
+        <option value="USA">USA</option>
+        <option value="UK">UK</option>
+        <option value="INDIA">INDIA</option>
+    </select>
+    <br><br>
+
+    <button type="submit">Submit</button>
+</table>
+</form>
+</div>
+<script>
+function validateForm() {
+    
+
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let zip = document.getElementById("zip_code").value;
+    let country = document.getElementById("country").value;
+
+    if (name == "" || email == "" ||
+        zip == "" || country == "") {
+
+        alert("Please fill in all fields");
+        return false;
+    }
+
+    let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!emailPattern.test(email)) {
+        alert("Please enter a valid email address");
+        return false;
+    }
+
+    return true;
+}
+</script>
+
+</body>
+</html>
